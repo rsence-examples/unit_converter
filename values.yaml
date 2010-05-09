@@ -1,5 +1,7 @@
 :input_number:
+  # initial value
   :value: 100
+  # responder on the server upon value change
   :responders:
     - :method: validate_input
 :convert_factor:

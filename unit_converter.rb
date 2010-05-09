@@ -47,4 +47,3 @@ class UnitConverter < GUIPlugin
     output_number.set( msg, input_number * convert_factor )
   end
 end
-UnitConverter.new.register( 'unit_converter' )

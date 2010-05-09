@@ -1,0 +1,13 @@
+Simple demonstration of client side programming and value binding with the server.
+
+Dependencies:
+RSence 2.0 or higher (http://github.com/rsence/rsence)
+
+Usage:
+Drop into the project plugin directory.
+
+Licence:
+LGPL v3
+
+More information: 
+http://github.com/rsence/rsence

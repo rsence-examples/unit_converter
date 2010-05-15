@@ -1,5 +1,5 @@
 type: GUITree
-version: 0.4
+version: 0.6
 dependencies:
   - default_theme
   - controls
@@ -34,9 +34,9 @@ subviews:
       - # The input number field itself
         class: HNumericTextControl
         rect: [ 88, 8, 80, 20 ]
+        # The value bound to the field (syncs with the server)
+        bind: :values.input_number
         options:
-          # The value bound to the field (syncs with the server)
-          valueObjId: :values.input_number
           # The minimun value allowed
           minValue: -1000000000
           # The maximum value allowed
@@ -53,9 +53,9 @@ subviews:
       - # The conversion factor field itself
         class: HNumericTextControl
         rect: [ 88, 32, 80, 20 ]
+        # The value bound to the field (syncs with the server)
+        bind: :values.convert_factor
         options:
-          # The value bound to the field (syncs with the server)
-          valueObjId: :values.convert_factor
           # The minimun value allowed
           minValue: -10000
           # The maximum value allowed
@@ -72,7 +72,6 @@ subviews:
       - # The result field itself
         class: HStringView
         rect: [ 88, 56, 80, 20 ]
-        options:
-          # The value bound to the field (syncs with the server,
-          # in this case, only from the server to the client is relevant)
-          valueObjId: :values.output_number
+        # The value bound to the field (syncs with the server,
+        # in this case, only from the server to the client is relevant)
+        bind: :values.output_number

@@ -4,13 +4,7 @@ dependencies:
   - default_theme
   - controls
 
-class: HApplication
-extend:
-  # Extend the constructor to receive the options defined.
-  constructor: |
-    function( options ){
-      this.base( options.priority, options.label );
-    }
+class: RSence.GUIApp
 options:
   # The options are passed on to the constructor of the class, see above.
   priority: 100

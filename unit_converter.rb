@@ -1,20 +1,26 @@
-#--
-##   Copyright 2010 Riassence Inc.
+##   
+ #   Copyright 2010 Riassence Inc.
  #   http://riassence.com/
  #
- #   You should have received a copy of the GNU LESSER GENERAL PUBLIC LICENSE
+ #   You should have received a copy of the GNU Lesser General Public License
  #   along with this software package. If not, contact licensing@riassence.com
  ##
- #++
 
 # = Riassence Unit Converter
 # This plugin demonstrates simple yaml-based gui with
 # simple server interaction.
 # The server-side code extends the +GUIPlugin+ class with value responders,
 # constructs and registers a GUIPlugin instance that loads the associated
-# gui/unit_converter.yaml file  and sends its contents to the client where
+# gui/unit_converter.yaml file and sends its contents to the client where
 # it's rendered.
 # Values are defined in the values.yaml file.
+#
+# Please refer to rdoc of rsence gem for full server side documentation.
+# 
+# Feel free to join #rsence on the IRCnet and FreeNode networks for further
+# questions.
+
+
 class UnitConverter < GUIPlugin
   def limit_number( msg, value, min_value, max_value )
     data = value.data

@@ -1,13 +1,18 @@
 Simple demonstration of client side programming and value binding with the server.
 
 Dependencies:
-RSence 2.0 or higher (http://github.com/rsence/rsence)
+RSence 2.0 or higher (http://rubygems.org/gems/rsence)
 
 Usage:
-Drop into the project plugin directory.
+Drop into the project plugin directory and fire it up! 
+For example:
+- rsence initenv myproject
+- drop the unit_converter folder and its contents into myproject/plugins
+- rsence run -f myproject
+
 
 Licence:
 LGPL v3
 
 More information: 
-http://github.com/rsence/rsence
+http://rsence.org/projects/rsence

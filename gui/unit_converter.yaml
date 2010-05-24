@@ -69,3 +69,5 @@ subviews:
         # The value bound to the field (syncs with the server,
         # in this case, only from the server to the client is relevant)
         bind: :values.output_number
+
+
